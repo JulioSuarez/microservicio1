@@ -1,10 +1,14 @@
+# Clase en vídeo: https://youtu.be/_y9qQZXE24A?t=14094
+
+### Users API con autorización OAuth2 básica ###
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 router = APIRouter(prefix="/basicauth",
-                    tags=["basicauth"],
-                    responses={status.HTTP_404_NOT_FOUND: {"message": "No encontrado"}})
+                   tags=["basicauth"],
+                   responses={status.HTTP_404_NOT_FOUND: {"message": "No encontrado"}})
 
 oauth2 = OAuth2PasswordBearer(tokenUrl="login")
 

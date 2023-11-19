@@ -1,3 +1,7 @@
+# Clase en vídeo: https://youtu.be/_y9qQZXE24A?t=17664
+
+### Users API con autorización OAuth2 JWT ###
+
 from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm

@@ -1,3 +1,7 @@
+# Clase en vídeo: https://youtu.be/_y9qQZXE24A?t=5382
+
+### Users API ###
+
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
@@ -15,8 +19,9 @@ class User(BaseModel):
 
 
 users_list = [User(id=1, name="Brais", surname="Moure", url="https://moure.dev", age=35),
-                User(id=2, name="Moure", surname="Dev", url="https://mouredev.com", age=35),
-                User(id=3, name="Brais", surname="Dahlberg", url="https://haakon.com", age=33)]
+              User(id=2, name="Moure", surname="Dev",
+                   url="https://mouredev.com", age=35),
+              User(id=3, name="Brais", surname="Dahlberg", url="https://haakon.com", age=33)]
 
 
 @router.get("/usersjson")
@@ -42,6 +47,7 @@ async def user(id: int):
     return search_user(id)
 
 
+# Clase en vídeo: https://youtu.be/_y9qQZXE24A?t=8529
 
 
 @router.post("/user/", response_model=User, status_code=201)

@@ -7,6 +7,13 @@ from typing import Optional
 
 
 class User(BaseModel):
-    id: Optional[str]
+    id: Optional[str] = None
     username: str
     email: str
+
+# class UserCreate(BaseModel):
+#     username: str
+#     email: str
+
+# class User(UserCreate):
+#     id: Optional[str] = None

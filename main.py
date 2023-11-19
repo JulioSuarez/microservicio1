@@ -23,3 +23,6 @@ async def root():
 @app.get("/url")
 async def url():
     return {"url": "https://mouredev.com/python"}
+
+# token para delta space
+# B5anJF9V_fhA8ZUFDbB11c9EbdEsMW5rrNQXnUsJL

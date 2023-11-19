@@ -1,3 +1,4 @@
+from typing import List
 from fastapi import APIRouter, HTTPException, status
 from db.models.user import User
 from db.schemas.user import user_schema, users_schema

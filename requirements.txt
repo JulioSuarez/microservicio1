@@ -1,4 +1,4 @@
-fastapi
+fastapi==0.104.1
 fastapi-socketio
 uvicorn
 python-jose
@@ -7,3 +7,4 @@ bcrypt
 pymongo
 python-decouple
 python-multipart
+python-dotenv

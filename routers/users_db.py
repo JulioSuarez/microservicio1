@@ -8,7 +8,7 @@ from bson import ObjectId
 router = APIRouter(prefix="/userdb", tags=["userdb"], responses={status.HTTP_404_NOT_FOUND: {"message": "No encontrado"}})
 
 
-@router.get("/", response_model=list[User])
+@router.get("/", response_model=list[user_schema])
 async def users():
     return users_schema(db_client.users.find())
 

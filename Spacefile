@@ -3,5 +3,5 @@ v: 0
 micros:
   - name: microservicio1
     src: ./
-    engine: python3.9
+    engine: python3.12
     primary: true
